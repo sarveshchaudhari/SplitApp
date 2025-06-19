@@ -19,48 +19,16 @@ SplitEase is a backend system designed to help groups of people split expenses f
 
 ## Getting Started
 
-### Prerequisites
+### How to Install
 
-- Python 3.8+
-- MongoDB Atlas account (or a local MongoDB instance)
-- Pip (Python package installer)
-
-### Setup
-
-1.  **Clone the repository (if applicable) or create the project files.**
-
-2.  **Create a virtual environment (recommended):**
+1. If on windows run the run.bat file
+2. If on linux run the following commands:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-
-3.  **Install dependencies:**
-    ```bash
+    source venv/bin/activate
     pip install -r requirements.txt
-    ```
-
-4.  **Configure Environment Variables:**
-    Create a `.env` file in the project root directory and add your MongoDB connection string:
-    ```env
-    MONGODB_URL="your_mongodb_atlas_connection_string_here"
-    DATABASE_NAME="split_ease_db"
-    ```
-    Replace `your_mongodb_atlas_connection_string_here` with your actual MongoDB Atlas connection string. Make sure your IP address is whitelisted in MongoDB Atlas network access settings.
-
-5.  **Run the application:**
-    ```bash
     uvicorn main:app --reload
     ```
-    The API will be available at `http://127.0.0.1:8000`.
-
-## API Endpoints
-
-Refer to the interactive documentation for detailed information on request/response formats:
-
--   **Swagger UI**: `http://127.0.0.1:8000/docs`
--   **ReDoc**: `http://127.0.0.1:8000/redoc`
--   **Custom API Guide**: `http://127.0.0.1:8000/api/docs`
 
 ### Core Endpoints:
 
