@@ -21,7 +21,13 @@ SplitEase is a backend system designed to help groups of people split expenses f
 
 ### How to Install
 
-1. If on windows run the run.bat file
+1. If on windows run the following commands:
+```bash
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    uvicorn main:app --reload
+    ```
 2. If on linux run the following commands:
     ```bash
     python -m venv venv
